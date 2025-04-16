@@ -1,0 +1,229 @@
+type: collection.insomnia.rest/5.0
+name: Scratch Pad
+meta:
+  id: wrk_scratchpad
+  created: 1744770624529
+  modified: 1744770624529
+collection:
+  - name: StarWars API
+    meta:
+      id: fld_05067d4eeaa849d88914001ce8075666
+      created: 1744770694770
+      modified: 1744770694770
+      sortKey: -1744770694770
+    children:
+      - name: Security
+        meta:
+          id: fld_c8b3b53e977643fdaa411504f2e7c89b
+          created: 1744772432372
+          modified: 1744772432372
+          sortKey: -1744772432372
+        children:
+          - url: https://starwars-api-806q.onrender.com/auth/login
+            name: Login
+            meta:
+              id: req_7ffd23ac7e7141858a97bf88c726b585
+              created: 1744770775641
+              modified: 1744834367329
+              isPrivate: false
+              sortKey: -1744772439851
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                  "username": "user",
+                  "password": "user123"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/11.0.2
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+      - name: Films
+        meta:
+          id: fld_3e5c643e892a4dd686122189cc1318cb
+          created: 1744772451868
+          modified: 1744772479419
+          sortKey: -1744772451868
+        children:
+          - url: https://starwars-api-806q.onrender.com/films?page=1&size=2
+            name: Find All
+            meta:
+              id: req_983bb8faddba488eb5e2d3bd1e808593
+              created: 1744772514746
+              modified: 1744834456868
+              isPrivate: false
+              sortKey: -1744772514746
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/11.0.2
+            authentication:
+              type: bearer
+              token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyIiwiaWF0IjoxNzQ0NzczNTc3LCJleHAiOjE3NDQ3NzcxNzd9.YzOuV2WZ6b04hrKnPRqV4cKeC-AjZNejQfgxdkoVyE8
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://starwars-api-806q.onrender.com/films/4
+            name: Find By Id
+            meta:
+              id: req_7ae1085746cf47fda64ed2ded4872d95
+              created: 1744772632626
+              modified: 1744834453488
+              isPrivate: false
+              sortKey: -1744772632626
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/11.0.2
+            authentication:
+              type: bearer
+              token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyIiwiaWF0IjoxNzQ0NzczNTc3LCJleHAiOjE3NDQ3NzcxNzd9.YzOuV2WZ6b04hrKnPRqV4cKeC-AjZNejQfgxdkoVyE8
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://starwars-api-806q.onrender.com/films/search?title=A new
+            name: Find By Name
+            meta:
+              id: req_8a21d5dc904541a79e5e2ac9c8fd3a60
+              created: 1744824829142
+              modified: 1744834445260
+              isPrivate: false
+              sortKey: -1744824829143
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/11.0.2
+            authentication:
+              type: bearer
+              token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyIiwiaWF0IjoxNzQ0ODI0ODE4LCJleHAiOjE3NDQ4Mjg0MTh9.XnydpY5MhgqpnuwuLV-QSidS1dz0H1voxPG0ZlXnCSw
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+      - name: People
+        meta:
+          id: fld_3c118c851dfd4f0f850b3eeef0364b2f
+          created: 1744772460893
+          modified: 1744772464303
+          sortKey: -1744772451968
+        children:
+          - url: https://starwars-api-806q.onrender.com/people/search?name=Luk
+            name: Find By Name
+            meta:
+              id: req_ecf0c361c21d435bbd902874846ae405
+              created: 1744773087792
+              modified: 1744834440924
+              isPrivate: false
+              sortKey: -1744773087792
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/11.0.2
+            authentication:
+              type: bearer
+              token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyIiwiaWF0IjoxNzQ0NzczNTc3LCJleHAiOjE3NDQ3NzcxNzd9.YzOuV2WZ6b04hrKnPRqV4cKeC-AjZNejQfgxdkoVyE8
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+      - name: Vehicles
+        meta:
+          id: fld_b77b61a42d2b4897ae75e55c1897817e
+          created: 1744772494604
+          modified: 1744772494604
+          sortKey: -1744772494604
+        children:
+          - url: https://starwars-api-806q.onrender.com/vehicles/filter?id=4&name=cr
+            name: Find By Id and Name
+            meta:
+              id: req_dd3de29342ba47638d13c75ab250358e
+              created: 1744773149066
+              modified: 1744834472045
+              isPrivate: false
+              sortKey: -1744773149066
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/11.0.2
+            authentication:
+              type: bearer
+              token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyIiwiaWF0IjoxNzQ0ODM0NDE5LCJleHAiOjE3NDQ4MzgwMTl9.m0eUc6A0I4jJMLB5lI3u3q0hldDenkIbB_Xc9Ln2kqg
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+      - name: Starships
+        meta:
+          id: fld_8119f07373d94924b9f0b8b855c1e1e2
+          created: 1744772503200
+          modified: 1744772503200
+          sortKey: -1744772503200
+        children:
+          - url: https://starwars-api-806q.onrender.com/starships?page=1&size=3
+            name: Find All
+            meta:
+              id: req_e0bc88e576cb47eb897571f52337194f
+              created: 1744773243158
+              modified: 1744834432344
+              isPrivate: false
+              sortKey: -1744773243158
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/11.0.2
+            authentication:
+              type: bearer
+              token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyIiwiaWF0IjoxNzQ0NzczNTc3LCJleHAiOjE3NDQ3NzcxNzd9.YzOuV2WZ6b04hrKnPRqV4cKeC-AjZNejQfgxdkoVyE8
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_99d30891da4bdcebc63947a8fc17f076de878684
+    created: 1744770674008
+    modified: 1744770674008
+environments:
+  name: Base Environment
+  meta:
+    id: env_99d30891da4bdcebc63947a8fc17f076de878684
+    created: 1744770673628
+    modified: 1744770673628
+    isPrivate: false
