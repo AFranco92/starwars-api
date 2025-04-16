@@ -15,32 +15,32 @@ This is a Java + Spring Boot application that consumes data from an external Sta
 
 ## 📚 Main Endpoints
 ### 🎬 Films
->GET /films?page={pageNumber}&size={pageSize}: Returns all films (paginated)
+- GET /films?page={pageNumber}&size={pageSize}: Returns all films (paginated)
 
->GET /films/{id}: Returns a film by ID
+- GET /films/{id}: Returns a film by ID
 
->GET /films/search?title={title}: Searches films by title
+- GET /films/search?title={title}: Searches films by title
 
 ### 👤 People
->GET /people?page={pageNumber}&size={pageSize}: Returns all characters (paginated)
+- GET /people?page={pageNumber}&size={pageSize}: Returns all characters (paginated)
 
->GET /people/{id}: Returns a character by ID
+- GET /people/{id}: Returns a character by ID
 
->GET /people/search?name={name}: Searches characters by name
+- GET /people/search?name={name}: Searches characters by name
 
 ### 🛸 Starships
->GET /starships?page={pageNumber}&size={pageSize}: Returns all starships (paginated)
+- GET /starships?page={pageNumber}&size={pageSize}: Returns all starships (paginated)
 
->GET /starships/{id}: Returns a starship by ID
+- GET /starships/{id}: Returns a starship by ID
 
->GET /starships/search?name={name}: Searches starships by name
+- GET /starships/search?name={name}: Searches starships by name
 
 ### 🚗 Vehicles
->GET /vehicles?page={pageNumber}&size={pageSize}: Returns all vehicles (paginated)
+- GET /vehicles?page={pageNumber}&size={pageSize}: Returns all vehicles (paginated)
 
->GET /vehicles/{id}: Returns a vehicle by ID
+- GET /vehicles/{id}: Returns a vehicle by ID
 
->GET /vehicles/search?name={name}: Searches vehicles by name
+- GET /vehicles/search?name={name}: Searches vehicles by name
 
 ## 🧪 Testing the API
 
